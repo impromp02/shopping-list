@@ -1,2 +1,2 @@
-# shopping-list
+# My Shoppig list
 A shopping list web application.
