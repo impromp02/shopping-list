@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shopping List</title>
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Shopping List</h1>
+    <div class="wrapper">
+        <div class="add">
+            <label for="newItem">Add Item: </label><br>
+            <div id="addbar">
+                <input type="text" name="newItem" id="newItem">
+                <button class="addBtn fa fa-plus"></button>
+                <ul id="suggest" class="hide"></ul>
+            </div>
+
+            <ul class="listItems">
+            </ul>
+        </div>
+        <div class="delete">
+            <h2>Items Bought: <button id="clearButton">Clear</button></h2>
+            <ul class="removedItems">
+            </ul>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

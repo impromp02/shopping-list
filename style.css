@@ -1,0 +1,109 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Sedgwick Ave', cursive;
+    min-height: 100%;
+    background: #00A1f1;
+    color: white;
+}
+body * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1 {
+    padding: .5rem 0;
+    text-align: center;
+    background:rgba(0,0,0,0.2);
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.add, .delete {
+    background:rgba(0,0,0,0.2);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.add {
+    min-width: 50%;
+    position: relative;
+    flex: 1 1 300px;
+}
+
+.delete {
+    flex: 1 2 300px;
+    color: #bbb;
+}
+
+label, h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+input {
+    width: 80%;
+    font-size: 1.2rem;
+    border: 2px solid lightblue;
+    padding: .2rem
+}
+
+button {
+    font-size: 1.2rem;
+    padding: .4rem .6rem;
+    border: 2px solid lightblue;
+    background: white;
+}
+
+button:hover{
+    background: lightblue;
+}
+li {
+    list-style: none;
+    font-size: 1.2rem;
+    padding: .5rem; 
+}
+
+ul > li i{
+    float: right;
+}
+
+.delete li {
+    text-decoration: line-through;   
+}
+
+#clearButton {
+    background-color: #ccc;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: .2rem .6rem;
+    float: right;
+}
+#clearButton:hover {
+    background: #ed575c;
+}
+#suggest{
+    position: absolute;
+    width: calc(80% - 26px);
+    border: 1px solid #ccc;
+    padding: .3rem;
+    height: max-content;
+    background: white;
+    color: black; 
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
